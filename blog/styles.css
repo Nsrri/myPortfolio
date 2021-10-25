@@ -1,0 +1,391 @@
+
+  * {
+    box-sizing: border-box;
+  max-width: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #757575;
+  height: 140px;
+  /* position: fixed;
+  z-index: 99;
+  left: 0;
+  top:0; */
+}
+header img{
+  width: 6rem;
+  height: 6rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  animation: spin 4s infinite;
+}
+@keyframes spin{
+ from {
+     transform: rotate(0);
+ }
+ to{
+     transform: rotate(360deg);
+ }
+}
+div h1{
+  font-size: 2rem;
+} 
+#logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav{
+  width: 50%;
+  margin-right: 1rem;
+}
+ul{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+li{
+  display: flex;
+  justify-content:space-between;
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+ 
+}
+/* .nav-responsive label{
+  margin-right:-2.5rem;
+  margin-top: 1rem;
+}
+.nav-responsive input{
+  display: none;
+  flex: right;
+}
+nav{
+  padding-right: 0.2rem;
+}
+input[type="checkbox"]:checked ~ nav{
+  transform: translateX(100%);
+} */
+header  a{
+  color: black;
+  text-decoration: none;
+}
+header  a:hover{
+  color:white;
+}
+header a:link{
+  color:#f0860c;
+}
+main{
+    margin: 3rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+main img{
+    width: 258px;
+    height: 250px;
+}
+main h2{
+font-family: Roboto;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: 0px;
+font-style: normal;
+}
+ main p{
+    color: #747a87;
+}
+ main a{
+    text-decoration: none;
+}
+#html-blog, #css-blog, #javaScript-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 258px;
+}
+footer h1{
+    color: #ccc;
+    font-weight: bold;
+  }
+  footer p{
+      font-family: SignifierWeb, "Times New Roman", serif;
+      font-size: 18px;
+  }
+  footer fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+label{
+    color: #3F3F3F;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+ fieldset input{
+    border-color: #fff;
+    border-radius: 10px;
+    background-color:#757575 ;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 15px;
+    font: inherit;
+}
+::placeholder{
+   color: #999;
+   opacity:1;
+}
+textarea{
+    border-radius: 10px;
+    border-color: #fff;
+    background-color:#757575 ;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    height: auto;
+    font: inherit;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.form-alignment{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+ input[type="button"]{
+    width: 20%;
+    margin-left: 1rem;
+    text-align: center;
+    padding: 16px 20px;
+    border-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color:#757575 ;
+    color: #f0860c;
+    font: inherit;
+    transition: .25s ease-in-out;
+}
+input[type="button"]:hover{
+    background-color: #fff;
+}
+form h1{
+   font-size: 40px;
+   line-height: 1.0625;
+   font-weight: 600;
+   letter-spacing: -.01em;
+   text-transform: none;
+   margin-bottom: 10px;
+   margin-left: 0.5rem;
+}
+span{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+.qucick-contact h1{
+   font-size: 40px;
+   line-height: 1.0625;
+   font-weight: 600;
+   letter-spacing: -.01em;
+   text-transform: none;
+   margin-bottom: 10px;
+}
+.qucick-contact{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+.qucick-contact p{
+    color: #3F3F3F;
+    margin-bottom: 0;
+}
+/* .qucick-contact :nth-child(2), :nth-child(4){
+    font-size: 25px;
+} */
+.social-links{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   margin-right: 1rem;
+}
+.social-links h1{
+   font-size: 40px;
+   line-height: 1.0625;
+   font-weight: 600;
+   letter-spacing: -.01em;
+   text-transform: none;
+   margin-bottom: 10px;
+
+}
+.social-links p{
+   color: #3F3F3F;
+
+}
+.socials button{
+    color: #3F3F3F;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color:#757575 ;
+    border-color:#fff;
+}
+.socials{
+    display: inline;
+    justify-content: space-between;
+}
+.all-contactinfos{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   margin-top: 1rem;
+    
+}
+footer{
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-around;
+  height: 600px; 
+  background-color: #757575;
+   width: 100vw; 
+}
+.qucick-contact:nth-child(1){
+   margin-bottom: 2rem;
+}
+@media only screen and (max-width:720px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   header img{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 4.2rem;
+       height: 4.2rem;
+       margin-top: 0.5rem;
+       margin-left: 1rem;
+   }
+div h1{
+   font-size: 16px;
+   font-family: 'Akronim', cursive;
+}
+ul{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end; 
+}
+li{
+   list-style-type: none;
+   font-size: 1rem;
+   font-weight: bold;    
+}
+main {
+   display:flex !important;
+   flex-direction: column;
+  justify-content:center;
+  align-items:flex-start;
+} 
+main > img{
+  width:150px ;
+  height: 150px;
+
+}
+footer{
+   height:950px;  
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.qucick-contact{
+   align-items: center;
+}
+.social-links{
+   align-items: center;
+}
+}
+@media only screen and (max-width:962px){
+  main{
+   display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-content: space-between;
+    justify-content: center;
+    place-items: center;
+  }
+  #javaScript-blog {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #css-blog{
+    padding-top: 1.6rem;
+  }
+.form-alignment  h1{
+   font-size: 30px;
+}
+.qucick-contact h1{
+   font-size: 30px;
+}
+.social-links h1{
+   font-size: 30px;
+}
+label{
+   font-size: 18px;
+}
+fieldset input{
+   width: 80%;
+   height: 14px;
+}
+textarea{
+width: 80%;
+}
+input[type="button"]{
+   padding:5px 12px ;
+}
+.qucick-contact :nth-child(3) {
+   font-weight: 200;
+   font-size: 15px;
+}
+.qucick-contact :nth-child(5){
+   font-weight: 200;
+   font-size: 15px;
+}
+.qucick-contact :nth-child(2), :nth-child(4){
+   font-size: 20px;
+}
+::placeholder{
+   font-size: 15px;
+}
+.socials button{
+   padding: 8px 15px;
+   border-radius: 10px;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+.socials{
+   display: flex;
+   flex-direction: column;
+}
+}
+
+    
