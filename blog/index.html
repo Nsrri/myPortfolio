@@ -10,18 +10,20 @@
 <body>
     <header>
         <div id="logo">
-            <img src="./images/b5b89b8d49094f5c883448b65d070c44.png" alt="mylogo">
+            <a href="../home/index.html"><img src="images/b5b89b8d49094f5c883448b65d070c44.png" alt="mylogo"></a>
             <h1>Nasrin`s<br> journey</h1>
         </div>
-        <!-- <div class="nav-responsive">
-        <input type="checkbox" id="navbar" name="navbar">
-        <label for="navbar">X</label> -->
-        <nav>
-            <ul>
-                <li><a href="../home/index.html">Home</a></li></li>
-                <li><a href="/blog/index.html" class="active">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../home/index.html" class="nav-link">Home</a></li></li>
+                <li class="nav-item"><a href="/blog/index.html" class="nav-link" class="active">Blog</a></li>
+                <li class="nav-item"><a href="#contact"class="nav-link" >Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <main>
@@ -70,36 +72,36 @@
         <a href="Nsrri"><img src="./images/iconmonstr-github-5-48.png" alt="github icon"></a>
         </div> -->
         <article class="form-alignment">
-           <form action="#">
-               <h1>Let`s talk.</h1>
-               <fieldset>
-                   <label for="name">Name:</label>
-                   <input type="text" id="name" name="name" placeholder="Enter your name">
-                   <label for="email">Email Adress:</label>
-                   <input type="email" id="email" placeholder="Enter your email adress">
-                   <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message"></textarea>
-               </fieldset>
-               <input type="button" value="submit">
-           </form>
+            <form action="https://formsubmit.co/nasrin.jafari@powercoders.org" method="POST"> 
+                <h2>Let`s talk.</h2>
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Email Adress:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email adress" required>
+                    <label for="message">Message:</label>
+                 <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message"></textarea>
+                </fieldset>
+                <button type="button" id="button-submit">Send</button>
+            </form>
         </article>
         <div class="all-contactinfos">
-        <article class="qucick-contact">
-            <h1>Quick contact</h1>
-            <p>Phone:</p>
-            <p>(+41)78 222 2174</p>
-            <p>Email:</p>
-            <p>nasrin.jafari@powercoders.org</p>
-         </article>
-         <article class="social-links">
-             <h1>Social links</h1>
-             <div class="socials">
-             <button>linkedin</button>
-             <button>github</button>
-             <button>Instagram</button>
-             </div>
-         </article>
+            <article class="qucick-contact">
+                <h2>Quick contact</h2>
+                <p>Phone:</p>
+                <p>(+41)78 *** 2174</p>
+                <p>Email:</p>
+                <a href="mailto:nasrin.jafar@powercoders.org"><p>nasrin.jafari@powercoders.org</p></a>
+             </article>
+             <article class="social-links">
+                 <h2>Social links</h2>
+                 <div class="socials">
+                 <a href="https://www.linkedin.com/in/nasrin-jafari1997"><button>linkedin</button></a>
+                 <a href="https://github.com/Nsrri"><button>github</button></a> 
+                 <a href="https://instagram.com/nasrinjafari.ch"><button>Instagram</button></a>
+             </article>
         </div>
- </footer>
+    </footer>
+    <script src="../home/main.js"></script>
 </body>
 </html>

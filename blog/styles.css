@@ -118,7 +118,7 @@ font-style: normal;
     align-items: flex-start;
     width: 258px;
 }
-footer h1{
+footer h2{
     color: #ccc;
     font-weight: bold;
   }
@@ -140,7 +140,7 @@ label{
 }
  fieldset input{
     border-color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color:#757575 ;
     padding: 8px 12px;
     margin-bottom: 10px;
@@ -168,24 +168,24 @@ textarea:focus, input:focus{
     margin-left: 1rem;
     margin-top: 1rem;
 }
- input[type="button"]{
+ #button-submit{
     width: 20%;
     margin-left: 1rem;
     text-align: center;
     padding: 16px 20px;
     border-color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
     background-color:#757575 ;
     color: #f0860c;
     font: inherit;
     transition: .25s ease-in-out;
 }
-input[type="button"]:hover{
+#button-submit:hover{
     background-color: #fff;
 }
-form h1{
-   font-size: 40px;
+form h2{
+   font-size: 30px;
    line-height: 1.0625;
    font-weight: 600;
    letter-spacing: -.01em;
@@ -199,8 +199,8 @@ span{
    justify-content: center;
    align-items: flex-start;
 }
-.qucick-contact h1{
-   font-size: 40px;
+.qucick-contact h2{
+   font-size: 30px;
    line-height: 1.0625;
    font-weight: 600;
    letter-spacing: -.01em;
@@ -227,8 +227,8 @@ span{
    align-items: flex-start;
    margin-right: 1rem;
 }
-.social-links h1{
-   font-size: 40px;
+.social-links h2{
+   font-size: 30px;
    line-height: 1.0625;
    font-weight: 600;
    letter-spacing: -.01em;
@@ -243,7 +243,7 @@ span{
 .socials button{
     color: #3F3F3F;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: bold;
     background-color:#757575 ;
     border-color:#fff;
@@ -286,6 +286,58 @@ footer{
        margin-top: 0.5rem;
        margin-left: 1rem;
    }
+     /* jbfjjv */
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-top: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+  }
+
+  .nav-menu {
+    position: absolute;
+    left: -120%;
+    top: 8.20rem;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 4rem;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav-menu.active {
+    left: 0;
+    margin-top: 4rem;
+  }
+  .nav-item a {
+    font-size: 2rem;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: flex-end;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* jhbkdfjvk */
 div h1{
    font-size: 16px;
    font-family: 'Akronim', cursive;
@@ -324,6 +376,12 @@ footer{
 .social-links{
    align-items: center;
 }
+.socials{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
 }
 @media only screen and (max-width:962px){
   main{
@@ -340,13 +398,13 @@ footer{
   #css-blog{
     padding-top: 1.6rem;
   }
-.form-alignment  h1{
+.form-alignment  h2{
    font-size: 30px;
 }
-.qucick-contact h1{
+.qucick-contact h2{
    font-size: 30px;
 }
-.social-links h1{
+.social-links h2{
    font-size: 30px;
 }
 label{

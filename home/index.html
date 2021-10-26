@@ -7,100 +7,97 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet"> 
     <title>Web Portfolio Of Nasrin</title>
 </head>
 <body >
     <header>
         <div id="logo">
-            <img src="images/b5b89b8d49094f5c883448b65d070c44.png" alt="mylogo">
+            <a href="/home/index.html"><img src="images/b5b89b8d49094f5c883448b65d070c44.png" alt="mylogo"></a>
             <h1>Nasrin`s<br> journey</h1>
         </div>
         <!-- <div class="nav-responsive">
         <input type="checkbox" id="navbar" name="navbar">
         <label for="navbar">X</label> -->
-        <nav>
-            <ul>
-                <li><a href="/home/index.html"class="active" >Home</a></li></li>
-                <li><a href="../blog/index.html">Blog</a></li>
-                <li><a href="#contact" >Contact</a></li>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/home/index.html" class="active" class="nav-link">Home</a></li></li>
+                <li class="nav-item"><a href="../blog/index.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#contact"class="nav-link" >Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
  <main>
-     <div>
-        <h2 >What will<br> you learn<br> here?!
+     <article class="learning-part">
+         <div id="learning-part-text">
+            <h2>What will<br> you learn<br> here?!</h2>
             <p>If you are a beginner,this website is usefull for you.
                 <br>Here I will share my journey about how am I learning programming.
                 <br>All information are simple.
                 <br>By the way, you will know my personlity here too.
             </p>
-        </h2>
-        <button type="button">See More!</button>
-    </div>
-    <img src="./images/10.png"alt="journeytext">
-</main> 
-<section>
-    <h2>What will you learn here?</h2>
-    <img src="./images/10.png" alt="woman using a keyboard" />
-    <p>
-        If you are a beginner,this website is usefull for you.
-        Here I will share my journey about how am I learning programming.
-        All information are simple.
-        By the way, you will know my personlity here too.
-    </p>
-</section>
- <section>
-        <article id="about-me1">
-          <h1>About Me</h1>
-          <h2>Hi,I am Nasrin!</h2>
-          <p style="width: 100ch">
-              I am web developer and living in switzerland.I would like to say,
-              in this website will happen something wonderfull especially for women.
-              please be patient and if you are a woman and intrested in programming
-               but have some financial problem to continue your education,
-               fill the form, we will contact you soon.
+            <a href="../blog/index.html"><button>See More!</button></a>
+        </div>
+        <img src="./images/10.png"alt="journeytext">
+     </article>
+     <article class="about-me">
+        <section>
+          <h3>About Me</h3>
+          <h4>Hi,I am Nasrin!</h4>
+          <p >
+              I am web developer and living in switzerland.I would like to say,<br>
+              in this website will happen something wonderfull especially for women.<br>
+              please be patient and if you are a woman and intrested in programming<br>
+              but have some financial problem to continue your education,<br>
+              fill the form, we will contact you soon.
           </p>
-        </article>
+        </section>
           <img src="./images/IMG_0144_BFYPhoto_Social_Media_Portraetbilder_Format_200x200mm_300dpi-removebg-preview-modified.png" alt="">
- </section>
- <footer id="contact">
+        </article>
+</main>
+<footer id="contact">
     <!-- <div>
     <a href="nasrin.jafari@powercoders.org"><img src="./images/iconmonstr-email-11-48.png" alt="email icon"></a>
     <a href="nasrin.jafari@powercoders.org"><img src="./images/iconmonstr-linkedin-5-48.png" alt="linkedin icon"></a>
     <a href="Nsrri"><img src="./images/iconmonstr-github-5-48.png" alt="github icon"></a>
     </div> -->
     <article class="form-alignment">
-       <form action="#">
-           <h1>Let`s talk.</h1>
+        <form action="https://formsubmit.co/nasrin.jafari@powercoders.org" method="POST"> 
+           <h2>Let`s talk.</h2>
            <fieldset>
                <label for="name">Name:</label>
-               <input type="text" id="name" name="name" placeholder="Enter your name">
+               <input type="text" id="name" name="name" placeholder="Enter your name" required>
                <label for="email">Email Adress:</label>
-               <input type="email" id="email" placeholder="Enter your email adress">
+               <input type="email" id="email" name="email" placeholder="Enter your email adress" required>
                <label for="message">Message:</label>
             <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message"></textarea>
            </fieldset>
-           <input type="button" value="submit">
+           <button type="button" id="button-submit">Send</button>
        </form>
     </article>
     <div class="all-contactinfos">
     <article class="qucick-contact">
-        <h1>Quick contact</h1>
+        <h2>Quick contact</h2>
         <p>Phone:</p>
-        <p>(+41)78 222 2174</p>
+        <p>(+41)78 *** 2174</p>
         <p>Email:</p>
-        <p>nasrin.jafari@powercoders.org</p>
+        <a href="mailto:nasrin.jafar@powercoders.org"><p>nasrin.jafari@powercoders.org</p></a>
      </article>
      <article class="social-links">
-         <h1>Social links</h1>
+         <h2>Social links</h2>
          <div class="socials">
-         <button>linkedin</button>
-         <button>github</button>
-         <button>Instagram</button>
-         </div>
+         <a href="https://www.linkedin.com/in/nasrin-jafari1997"><button>linkedin</button></a>
+         <a href="https://github.com/Nsrri"><button>github</button></a> 
+         <a href="https://instagram.com/nasrinjafari.ch"><button>Instagram</button></a>
      </article>
     </div>
 </footer>
+<script src="main.js"></script>
 </body>
 </html>
